@@ -40,7 +40,7 @@ namespace MatekLib
 
         public override string ToString()
         {
-            return $"{Szam1}; {Szam2}; {Szam3} - Helyes megoldás";
+            return $"a={Szam1}; b={Szam2}; c={Szam3}";
         }
     }
 }
