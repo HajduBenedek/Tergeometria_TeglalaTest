@@ -19,7 +19,17 @@ namespace MatekLib
 
         private bool Megoldó(int szam1, int szam2, int szam3)
         {
-            throw new NotImplementedException();
+            int felszin = 2 * ((szam1 * szam2) + (szam2 * szam3) + (szam3 * szam1));
+            int térfogat = szam1 * szam2 * szam3;
+
+            if (felszin == térfogat)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public int Szam1 { get; init; }
@@ -28,5 +38,9 @@ namespace MatekLib
         public bool HelyesMegoldás { get; init; }
 
 
+        public override string ToString()
+        {
+            return $"{Szam1}; {Szam2}; {Szam3} - Helyes megoldás";
+        }
     }
 }

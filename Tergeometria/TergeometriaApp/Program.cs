@@ -1,5 +1,4 @@
-﻿List<string> megoldások = new();
+﻿using MatekLib;
 
-megoldások.Add("blabla");
+List<Matek> megoldások = new();
 
-Console.WriteLine(megoldások[0]);
