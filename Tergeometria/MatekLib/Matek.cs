@@ -42,5 +42,6 @@ namespace MatekLib
         {
             return $"a={Szam1}; b={Szam2}; c={Szam3}";
         }
+
     }
 }
